@@ -3,6 +3,6 @@
 Advice generator using Reactjs
 ---
 > ![Website](src/images/screenshotapp.png)
-> ### [LiveWebsite](https://quotesgt.netlify.app/)
+> ### [LiveWebsite](https://react-advice-generatorapp.netlify.app/)
 
 
