@@ -1,0 +1,97 @@
+.cards{
+     width:100%;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color:var(--dark-grayish-blue);
+}
+
+.container{
+    width:500px;
+   background-color:  var( --grayish-blue);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+   padding: 1.25rem 1.25rem 3rem;
+    animation: yourAnimation 1s forwards  0.2s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    
+ }
+ 
+ h2{
+    color:var(--neon-green);
+    font-size:24px;
+    line-height:2rem;
+   text-transform: uppercase;
+   letter-spacing: 0.5rem;
+ }
+ p{
+    line-height: 2.2rem;
+    font-size: 28px;
+     color:var(--light-cyan);
+     font-weight: 600;   
+     padding:20px 0px; 
+     letter-spacing: 0.2rem;
+ }
+picture{
+   position: relative;
+   padding: 5px 0px;
+}
+
+ .btn{
+    position: absolute;
+    left: 44%;
+    bottom: -2rem;
+    padding: 1rem;
+    border-radius:50%;
+    background-color:var(--neon-green);
+    box-shadow:0px 10px 12px -4px var(--neon-green);
+    color:#ffff;
+   border:1px solid var(--neon-green);
+    cursor: pointer;
+    outline: none;
+ }
+ 
+ .btn:hover{
+   background-color:#32B37E;
+   border-color:#32B37E ;
+   transition: all 0.3s ease-in;
+   box-shadow:5px 5px 10px rgba(0,0,0,0.07);
+  }
+  @keyframes yourAnimation{
+   0%{
+       transform: translateX(-950px);
+   
+       }
+  
+      
+   100%{
+       transform:  translateX(0px);
+       }
+ }
+
+ @media(max-width:596px){
+    .cards{
+       padding: 0px 10px;
+    }
+    .container{
+       width: 100%;
+    }
+    p{
+       font-size: 20px;
+    }
+    img{
+       width: 100%;
+    }
+     .btn{
+    left: 40%;
+ }
+}
